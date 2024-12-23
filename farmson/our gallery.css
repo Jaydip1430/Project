@@ -1,0 +1,208 @@
+body {
+    margin: 0%;
+}
+
+.info {
+    background-color: rgb(64, 80, 110);
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    padding: 10px 200px 10px 100px;
+    color: white;
+}
+
+.info div {
+    display: flex;
+    gap: 10px;
+}
+
+.Quality {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px 0px 100px;
+    margin: 10px;
+}
+
+.Quality div img {
+    width: 255px;
+}
+
+
+.Quality .li ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 10px 200px;
+    gap: 40px;
+    justify-content: end;
+    font-size: 18px;
+}
+
+.li ul li a {
+    display: flex;
+    font-weight:900;
+    font-size: large;
+    text-decoration: none;
+    color: rgb(63, 84, 111)
+    
+}
+
+.li ul li a:hover {
+    color: rgb(252 185 0);
+    text-decoration: underline;
+}
+
+.get {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.get button {
+    width: 130px;
+    height: 40px;
+    background-color: rgb(63, 84, 111);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.get button:hover {
+    background-color: rgb(252 185 0);
+}
+
+
+
+.ourgallery {
+    background-image:url(image/client-backgroun.jpg);
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding-top: 100px;
+    font-size: x-large;
+    color: white;
+}
+
+
+.imagies {
+    margin: 120px 250px 0px 200px;
+}
+
+.image {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+
+
+
+.getfree {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.getfree h2 {
+    text-align: center;
+    font-size:xx-large;
+}
+
+.getfree .type {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.type input {
+    background-color:rgb(246 246 246);
+    width: 270px;
+    height: 25px;
+    padding: 10px;
+}
+
+.textarea {
+    padding-left: 290px;
+    gap: 100px;
+}
+
+.textarea textarea {
+    background-color:rgb(246 246 246);
+}
+
+.getfree .submit {
+    display: flex;
+    padding-left: 290px;
+}
+
+.submit button {
+    width: 110px;
+    height: 45px;
+    background-color: rgb(64, 80, 110); 
+    color: white;
+    font-weight: bolder ;
+    margin-bottom: 70px;
+    border: none;
+}
+
+
+.submit button:hover {
+    background-color: rgb(252 185 0);
+}
+
+
+.address {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(202, 207, 214);
+    padding: 30px;
+    color:  rgb(64, 80, 110);
+    font-size: 20px;
+}
+
+.add {
+    width: 200px;
+    line-height: 30px;
+}
+
+.Quicklink div ul {
+    line-height: 30px;
+    padding:0px;
+}
+
+.certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.certibutton button { 
+    background-color: rgb(64, 80, 110);
+    width: 200px;
+    height: 50px;
+    color: white;
+}
+
+
+
+
+.Copyright {
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+    background-color: rgb(64, 80, 110); 
+    color: white;
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}

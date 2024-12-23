@@ -1,0 +1,292 @@
+body{
+    margin: 0px;
+    max-width: 100%;
+}
+
+.br-architects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    position:fixed;
+    background-color: white;
+    width: 100%;
+}
+
+.br-architects div{
+    display: flex;
+    border: none;
+    gap: 10px;
+    letter-spacing: 5px;
+    font-size: large;
+    align-items: center;
+}
+
+.br-architects div p a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.br-architects ul {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    color: black;
+}
+
+.br-architects ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.progect{
+    display: flex;
+    margin: 30px;
+    border-bottom:1px solid #ccc;
+}
+
+.Architects {
+    background-image: url(image/architect.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    gap: 10px;
+    letter-spacing: 4px;
+    background-size: cover;
+}
+
+.Architects b {
+    background-color: rgb(0 0 0);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 85px;
+    height: 70px;
+}
+
+
+.house{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sumer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom:20px ;
+}
+
+.sumer h3{
+    display: flex;
+    position: absolute;
+    color: white;
+    background-color: black;
+    padding: 5px 20px 5px 20px;  
+    top: -18px; 
+}
+
+.brick{
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.brick h3{
+    display: flex;
+    position: absolute;
+    color: white;
+    background-color: black;
+    padding: 5px 20px 5px 20px; 
+    top: -18px;  
+}
+
+.progect{
+    display: flex;
+    margin: 30px;
+    border-bottom:1px solid #ccc ;
+}
+
+.About{
+    display: flex;
+    margin: 30px;
+    border-bottom:1px solid #ccc ;
+}
+
+.Abouts p {
+    display: flex;
+    padding: 0px 30px 0px 35px;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.imageing{
+    display: flex;
+    margin: 50px 20px 20px 30px;
+    gap: 15px;
+}
+
+.Jahn-doe img{
+    width: 350px;
+}
+
+.Jahn-doe h4{
+    color: rgba(0, 0, 0, 0.453);
+}
+
+.Jahn-doe p{
+    font-size: large;
+    width: 350px;
+}
+
+.Jahn-doe button {
+    width: 340px;
+    height: 40px;
+    font-size: 17px;
+    border: none;
+}
+
+.Jahn-doe button:hover{
+    background-color: rgba(128, 128, 128, 0.333);
+}
+
+.contact{
+    display: flex;
+    margin: 30px;
+    border-bottom:1px solid #ccc ; 
+}
+
+
+.Lets{
+    display: flex;
+    padding-left: 30px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px 0px 35px ;
+    gap: 20px; 
+}
+
+.form input{
+    height: 40px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+}
+
+.form button {
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+
+.form button:hover {
+    background-color: rgba(0, 0, 0, 0.249);
+    color: black;
+}
+
+.map-img{
+    margin-top: 50px;
+    padding-left: 15px;
+}
+
+.poewr-by{
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 100px;
+    font-size: 18px;
+}
+
+.poewr-by a{
+    color: white;
+}
+
+
+
+@media(max-width:576px) 
+{
+    .Architects {
+        width:100%;
+        height: 250px;
+        
+    }
+
+    .Architects p {
+        display: none;
+    }
+
+    .br-architects ul {
+        display: none;
+    }
+
+    .house{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sumer img {
+        width: 100%;
+    }
+
+    .brick img  {
+        width: 100%;
+    }
+
+    .imageing{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Jahn-doe img{
+        width: 100%;
+    }
+
+    .Jahn-doe p {
+        width: 100%;
+    }
+
+    .Jahn-doe button{
+        width: 100%;
+    }
+
+    .map-img{
+      display: flex;
+      height: 300px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+    }
+}
+
+
+@media(min-width:1080)
+{
+    .body{
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+

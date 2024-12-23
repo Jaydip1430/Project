@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SCUSHACMC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</head>
+<style>
+    body {
+        margin: 0;
+
+    }
+
+    .BAR div ul li a {
+        color: brown;
+    }
+
+    .About-us div a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .course {
+        letter-spacing: 2px;
+    }
+
+
+    .LINKS ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .submit-button input{
+            background-color: rgb(92 184 92);
+            color: white;
+            width: 150px;
+            height: 50px;
+    }
+
+    .submit-button input:hover{
+        background-color: rgb(8, 154, 8);
+        color: white;
+    }
+
+
+
+    @media(max-width:576px) {
+        .Managed {
+            display: flex;
+            flex-direction: column;
+            padding-left: 50px;
+            line-height: 8px;
+            font-size: 15px;
+        }
+
+        .SMT img {
+            width: 80px;
+        }
+
+        .SMT div p {
+            display: flex;
+            font-size: xx-small;
+            font-weight: bolder;
+        }
+
+        .BAR {
+            display: flex;
+        }
+
+        .BAR div ul li {
+            line-height: 5px;
+        }
+        .BAR div ul li a{
+            line-height: 15px;
+        }
+
+        .button {
+            background-color: transparent;
+        }
+
+        .About-us {
+            display: flex;
+            gap: 150px;
+            padding-left: 20px;
+        }
+
+        .SMT-address div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .SMT-SADGUNA i {
+            display: none;
+        }
+
+        .powered-by {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media(min-width:577px) {
+        .button {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="Managed text-light d-flex justify-content-center pt-3 fw-bold"
+        style="background-color:  rgb(230 120 23) ;">
+        <p class="col-md-5">Managed by Surendranagar Law Society | NAAC Accredited B+</p>
+        <p class="col-md-3"> Call: 02752-223291/236955</p>
+        <div>
+            <select class="goog-te-combo rounded-1" aria-label="Language Translate Widget" fdprocessedid="svs489">
+                <option value="">Select Language</option>
+                <option value="af">Afrikaans</option>
+                <option value="sq">Albanian</option>
+                <option value="am">Amharic</option>
+                <option value="ar">Arabic</option>
+                <option value="hy">Armenian</option>
+                <option value="as">Assamese</option>
+                <option value="ay">Aymara</option>
+                <option value="az">Azerbaijani</option>
+                <option value="bm">Bambara</option>
+                <option value="eu">Basque</option>
+                <option value="be">Belarusian</option>
+                <option value="bn">Bengali</option>
+                <option value="bho">Bhojpuri</option>
+                <option value="bs">Bosnian</option>
+                <option value="bg">Bulgarian</option>
+                <option value="ca">Catalan</option>
+                <option value="ceb">Cebuano</option>
+                <option value="ny">Chichewa</option>
+                <option value="zh-CN">Chinese (Simplified)</option>
+                <option value="zh-TW">Chinese (Traditional)</option>
+                <option value="co">Corsican</option>
+                <option value="hr">Croatian</option>
+                <option value="cs">Czech</option>
+                <option value="da">Danish</option>
+                <option value="dv">Dhivehi</option>
+                <option value="doi">Dogri</option>
+                <option value="nl">Dutch</option>
+                <option value="eo">Esperanto</option>
+                <option value="et">Estonian</option>
+                <option value="ee">Ewe</option>
+                <option value="tl">Filipino</option>
+                <option value="fi">Finnish</option>
+                <option value="fr">French</option>
+                <option value="fy">Frisian</option>
+                <option value="gl">Galician</option>
+                <option value="ka">Georgian</option>
+                <option value="de">German</option>
+                <option value="el">Greek</option>
+                <option value="gn">Guarani</option>
+                <option value="gu">Gujarati</option>
+                <option value="ht">Haitian Creole</option>
+                <option value="ha">Hausa</option>
+                <option value="haw">Hawaiian</option>
+                <option value="iw">Hebrew</option>
+                <option value="hi">Hindi</option>
+                <option value="hmn">Hmong</option>
+                <option value="hu">Hungarian</option>
+                <option value="is">Icelandic</option>
+                <option value="ig">Igbo</option>
+                <option value="ilo">Ilocano</option>
+                <option value="id">Indonesian</option>
+                <option value="ga">Irish Gaelic</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="jw">Javanese</option>
+                <option value="kn">Kannada</option>
+                <option value="kk">Kazakh</option>
+                <option value="km">Khmer</option>
+                <option value="rw">Kinyarwanda</option>
+                <option value="gom">Konkani</option>
+                <option value="ko">Korean</option>
+                <option value="kri">Krio</option>
+                <option value="ku">Kurdish (Kurmanji)</option>
+                <option value="ckb">Kurdish (Sorani)</option>
+                <option value="ky">Kyrgyz</option>
+                <option value="lo">Lao</option>
+                <option value="la">Latin</option>
+                <option value="lv">Latvian</option>
+                <option value="ln">Lingala</option>
+                <option value="lt">Lithuanian</option>
+                <option value="lg">Luganda</option>
+                <option value="lb">Luxembourgish</option>
+                <option value="mk">Macedonian</option>
+                <option value="mai">Maithili</option>
+                <option value="mg">Malagasy</option>
+                <option value="ms">Malay</option>
+                <option value="ml">Malayalam</option>
+                <option value="mt">Maltese</option>
+                <option value="mi">Maori</option>
+                <option value="mr">Marathi</option>
+                <option value="mni-Mtei">Meiteilon (Manipuri)</option>
+                <option value="lus">Mizo</option>
+                <option value="mn">Mongolian</option>
+                <option value="my">Myanmar (Burmese)</option>
+                <option value="ne">Nepali</option>
+                <option value="no">Norwegian</option>
+                <option value="or">Odia (Oriya)</option>
+                <option value="om">Oromo</option>
+                <option value="ps">Pashto</option>
+                <option value="fa">Persian</option>
+                <option value="pl">Polish</option>
+                <option value="pt">Portuguese</option>
+                <option value="pa">Punjabi</option>
+                <option value="qu">Quechua</option>
+                <option value="ro">Romanian</option>
+                <option value="ru">Russian</option>
+                <option value="sm">Samoan</option>
+                <option value="sa">Sanskrit</option>
+                <option value="gd">Scots Gaelic</option>
+                <option value="nso">Sepedi</option>
+                <option value="sr">Serbian</option>
+                <option value="st">Sesotho</option>
+                <option value="sn">Shona</option>
+                <option value="sd">Sindhi</option>
+                <option value="si">Sinhala</option>
+                <option value="sk">Slovak</option>
+                <option value="sl">Slovenian</option>
+                <option value="so">Somali</option>
+                <option value="es">Spanish</option>
+                <option value="su">Sundanese</option>
+                <option value="sw">Swahili</option>
+                <option value="sv">Swedish</option>
+                <option value="tg">Tajik</option>
+                <option value="ta">Tamil</option>
+                <option value="tt">Tatar</option>
+                <option value="te">Telugu</option>
+                <option value="th">Thai</option>
+                <option value="ti">Tigrinya</option>
+                <option value="ts">Tsonga</option>
+                <option value="tr">Turkish</option>
+                <option value="tk">Turkmen</option>
+                <option value="ak">Twi</option>
+                <option value="uk">Ukrainian</option>
+                <option value="ur">Urdu</option>
+                <option value="ug">Uyghur</option>
+                <option value="uz">Uzbek</option>
+                <option value="vi">Vietnamese</option>
+                <option value="cy">Welsh</option>
+                <option value="xh">Xhosa</option>
+                <option value="yi">Yiddish</option>
+                <option value="yo">Yoruba</option>
+                <option value="zu">Zulu</option>
+            </select>
+            <div class="d-flex">
+                <p class="text-secondary">Powered by</p>
+                <a class="VIpgJd-ZVi9od-l4eHX-hSRGPd text-body-tertiary text-decoration-none"
+                    href="https://translate.google.com" target="_blank"><img
+                        src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png"
+                        width="37px" height="14px" style="padding-right: 3px" alt="Google Translate">Translate</a>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center border-bottom fs-3 container gap-3 SMT">
+        <img src="image/logo.jpg" width="120px">
+        <div class="d-flex fw-bold text-center pt-5 gap-3" style="color: rgb(165 42 42);">
+            <p>SMT. SADGUNA C.U.SHAH HOME SCIENCE & C.U.SHAH ARTS AND COMMERCE MAHILA COLLEGE,WADHWAN CITY,SURENDRANAGAR
+            </p>
+        </div>
+    </div>
+
+
+    <nav class="BAR navbar navbar-expand-lg container col-md-8 mb-4">
+        <div class="container-fluid ">
+            <a href=""></a>
+            <button class="button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse fw-bold" id="navbarScroll">
+                <ul class="navbar-nav gap-3" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ABOUT
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="About-collage.html">ABOUT COLLAGE</a></li>
+                            <li><a class="dropdown-item" href="About-management.html">ABOUT MANAGEMENT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cource.html">COURCE</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ADMISSION
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Admission-form.html">ADMISSION FORM</a></li>
+                            <li><a class="dropdown-item" href="image/broucher.pdf">BROUCHER</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faculty.html">FACULTY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            STUDENT CORNER
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="syllabus.html">SYLLABUS</a></li>
+                            <li><a class="dropdown-item" href="MATERIAL.html">MATERIAL</a></li>
+                            <li><a class="dropdown-item" href="News-Notice.html">NEWS & NOTICE</a></li>
+                            <li><a class="dropdown-item" href="ALUMNI.HTML">ALUMNI</a></li>
+                            <li><a class="dropdown-item" href="CERTIFICATE-REQUEST.html">CERTIFICATE REQUEST</a></li>
+                            <li><a class="dropdown-item" href="#">MERIT LIST</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="About-us d-flex pt-2 pb-2 text-light fs-5" style="background-color:  rgb(230 120 23) ;">
+        <div class="container col-md-4">ALUMNI</div>
+        <div class="container col-md-2"><a href="">Home</a> / Alumni</div>
+    </div>
+
+
+
+
+
+    <div class="container col-md-9">
+        <div class="row mt-5 fs-5">
+            <div class="col-md-12">
+                <div class="fs-5 fw-bold mb-4">વિદ્યાર્થીની સામાન્ય વિગત</div>
+            </div>
+        </div>
+
+        <div class="row pb-2">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="fw-bold">પાસ કરેલ વિદ્યાશાખા : <span class="text-danger">*</span></label>
+                    <select class="parent-change form-control course_change" name="course_name" fdprocessedid="83jjpz">
+                        <option value="" selected="selected">Select Course Name
+                        </option>
+                        <option value="BA- Gujarati">BA- Gujarati</option>
+                        <option value="BA- Hindi">BA- Hindi</option>
+                        <option value="B.Com - Accounting">B.Com - Accounting</option>
+                        <option value="B.Com - Computer Science">B.Com - Computer Science</option>
+                        <option value="B.Sc  - Home Science">B.Sc - Home Science</option>
+                        <option value="M.Sc  - Home Science">M.Sc - Home Science</option>
+                        <option value="PHD">PHD</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="fw-bold"> એડમિશન લીધેલ વર્ષ: <span class="text-danger">*</span></label>
+                    <select class="form-control year_change" name="year_of_admission" fdprocessedid="y01oao">
+                        <option value="" selected="selected">Select Year of Admission</option>
+                        <option value="1988">1988</option>
+                        <option value="1989">1989</option>
+                        <option value="1990">1990</option>
+                        <option value="1991">1991</option>
+                        <option value="1992">1992</option>
+                        <option value="1993">1993</option>
+                        <option value="1994">1994</option>
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                        <option value="1997">1997</option>
+                        <option value="1998">1998</option>
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pb-2">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name" class="fw-bold">અટક : <span class="text-danger">*</span></label>
+                    <input placeholder="Enter Surname" required="" class="form-control" name="surname" type="text"
+                        fdprocessedid="lexfeh">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name" class="fw-bold">નામ : <span class="text-danger">*</span></label>
+                    <input placeholder="Enter Name" required="" id="name" class="form-control" name="name" type="text"
+                        fdprocessedid="q07yb5">
+                </div>
+            </div>
+        </div>
+
+        <div class="row pb-4">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="father_name" class="fw-bold">પિતા નુ નામ : <span class="text-danger">*</span></label>
+                    <input pattern="[a-zA-z ]*$" placeholder="Enter Father Name" required="" class="form-control"
+                        name="father_name" type="text" fdprocessedid="ux57ph">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="birth_date" class="fw-bold">જન્મ તારીખ : <span class="text-danger">*</span></label>
+                    <input required="" placeholder="eg.04/10/1998" autocomplete="off" class="form-control"
+                        name="birth_date" type="date">
+                </div>
+            </div>
+        </div>
+
+        <hr class="pb-5 text-body-tertiary">
+    </div>
+
+
+    <div class="container col-md-9">
+        <div class="row">
+            <div class="col-md-12 fs-5">
+                <div class="syl-title" style="margin-bottom: 5vh;font-weight: bold;">સંપર્ક માહિતી</div>
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="mobile_no" class="fw-bold">મોબાઇલ નંબર : <span class="text-danger">*</span></label>
+                    <input pattern="[0-9]{10}" required="" name="mobile_no" value="" id="mobile_no" type="text"
+                        placeholder="Enter Mobile No   Ex.(9978155555)" onkeyup="check(); return false;"
+                        class="form-control" fdprocessedid="6hj6cj"><span id="message"></span>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="whatsapp_no" class="fw-bold"> વ્હોટ્સપ મોબાઇલ નંબર :</label>
+                    <input pattern="[0-9]{10}" placeholder="Enter Whatsapp No" id="whatsapp_no" class="form-control"
+                        name="whatsapp_no" type="text" fdprocessedid="vg2il">
+                </div>
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="email" class="fw-bold">ઇ-મેઇલ : <span class="text-danger">*</span></label>
+                    <input pattern="[^@]+@[^@]+\.[A-Za-z]{2,6}" required="" placeholder="Enter Email" id="email"
+                        class="form-control" name="email" type="text" fdprocessedid="0ikz7e">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="address" class="fw-bold">સરનામુ: <span class="text-danger">*</span></label>
+                    <textarea rows="2" required="" class="textarea-class form-control" placeholder="Enter Address"
+                        name="address" cols="50"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="country" class="fw-bold">દેશ : <span class="text-danger">*</span></label>
+                    <input pattern="[a-zA-z ]*$" type="text" required="" id="country" placeholder="Enter country"
+                        class="parent-change form-control select2" name="country" fdprocessedid="3cuqbk">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="state" class="fw-bold">રાજ્ય : <span class="text-danger">*</span></label>
+                    <input pattern="[a-zA-z ]*$" type="text" required="" placeholder="Enter state" id="state"
+                        class="parent-change form-control select2" name="state" fdprocessedid="3fkq5g">
+                </div>
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="city" class="fw-bold">ગામ : <span class="text-danger">*</span></label>
+                    <input pattern="[a-zA-z ]*$" type="text" id="city" placeholder="Enter city" required=""
+                        class="parent-change form-control select2" name="city" fdprocessedid="twwbkv">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="zip_code" class="fw-bold">પિનકોડ : <span class="text-danger">*</span></label>
+                    <input pattern="[0-9]{6}" placeholder="Enter Pin Code" required="" id="zip_code"
+                        class="form-control" name="pincode" type="text" fdprocessedid="yx3cm">
+                </div>
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="present_status" class="fw-bold">હાલ નુ કાર્ય : <span class="text-danger">*</span></label>
+                    <select class="parent-change form-control" name="present_status" fdprocessedid="bw4ry">
+                        <option value="" selected="selected">Select Current Status</option>
+                        <option value="Entrepreneur">Entrepreneur</option>
+                        <option value="Service in private sector">Service in private sector</option>
+                        <option value="Own business">Own business</option>
+                        <option value="Government Job">Government Job</option>
+                        <option value="House wife">House wife</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="designation" class="fw-bold">હોદ્દો : <span class="text-danger">*</span></label>
+                    <input pattern="[a-zA-z ]*$" placeholder="Enter Designation" required="" id="designation"
+                        class="form-control" name="designation" type="text" fdprocessedid="rmbbbq">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="submit-button col-md-12 text-center">
+                <input value="Submit Form" class="btn fs-5">
+
+            </div>
+        </div>
+
+        
+    </div>
+
+
+
+
+
+    <div class="SMT-address d-flex-column  possion-relative pt-3 " style="background-color: rgb(165 42 42);">
+        <div
+            class="SMT-SADGUNA d-flex gap-4 fs-6 fw-bold possion-absolute bg-light justify-content-center align-items-center pt-2 pb-2 container col-md-12 rounded-1 text-center">
+            <i class="fa-solid fa-circle"></i>
+            SMT. SADGUNA C.U.SHAH HOME SCIENCE & C.U.SHAH ARTS AND COMMERCE MAHILA COLLEGE
+            <i class="fa-solid fa-circle"></i>
+        </div>
+        <div class="d-flex container align-items-start">
+            <div class="text-light container col-md-6 fs-5 lh-lg pt-3 pb-3">
+                <h4><b>ADDRESS</b></h4>
+                <p>B/H. Mahatma Gandhi Hospital,<br>
+                    Nr. Kadva Patidar Boarding,<br>
+                    60 feet Road,<br>
+                    Wadhwan City 363030 <br>
+                    Dist. Surendranagar(Gujarat).</p>
+                <h6 lang="pt-3"><b>Phone: </b>(+91) 02752-223291
+                    <b>Email:</b>hsccollege@gmail.com/dnmehta.hsc@gmail.com
+                </h6>
+            </div>
+            <div class="LINKS text-light col-md-5 lh-lg pt-3">
+                <ul type="none">
+                    <h4><b>LINKS</b></h4>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Admission</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">Faculty</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="powered-by d-flex pt-2 pb-2 text-light" style="background-color: rgb(230 120 23);">
+        <div class="col-md-2 container">Powered By : Shiv Computer</div>
+        <div class="col-md-3 container"><i class="fa-solid fa-envelope"></i> scushacmc.admission@gmail.com</div>
+    </div>
+</body>
+
+</html>

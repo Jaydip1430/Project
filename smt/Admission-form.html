@@ -1,0 +1,948 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SCUSHACMC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</head>
+<style>
+    body {
+        margin: 0;
+
+    }
+
+    .BAR div ul li a {
+        color: brown;
+    }
+
+    .About-us div a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .course {
+        letter-spacing: 2px;
+    }
+
+    .accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .accordion .accordion-item button {
+        border: 1px solid rgb(221 221 221);
+        background-color: rgb(245 245 245);
+        border-radius: 5px;
+    }
+
+    .MERIT a {
+        text-decoration: none;
+        font-size: 14px;
+        color: rgb(51 122 183);
+        font-weight: bold;
+    }
+
+    .LINKS ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    .SAVE button{
+        border: none rgb(76 174 76);
+        background-color: rgb(92 184 92);
+        color: white;
+        width: 60px;
+        height: 35px;
+        border-radius: 5px;
+    }
+
+
+    @media(max-width:576px) {
+        .Managed {
+            display: flex;
+            flex-direction: column;
+            padding-left: 50px;
+            line-height: 8px;
+            font-size: 15px;
+        }
+
+        .SMT img {
+            width: 70px;
+        }
+
+        .SMT div p {
+            display: flex;
+            font-size: xx-small;
+        }
+
+        .BAR {
+            display: flex;
+        }
+
+        .BAR div ul li {
+            line-height: 5px;
+        }
+        .BAR div ul li a{
+            line-height: 15px;
+        }
+
+        .About-us {
+            display: flex;
+            gap: 150px;
+            padding-left: 20px;
+        }
+
+        .button {
+            background-color: transparent;
+        }
+
+        .SMT-address div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .SMT-SADGUNA i {
+            display: none;
+        }
+
+        .powered-by {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .table-1{
+            display: none;
+        }
+    }
+
+    @media(min-width:577px) {
+        .button {
+            display: none;
+        }
+        .table-2{
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="Managed text-light d-flex justify-content-center pt-3 fw-bold"
+        style="background-color:  rgb(230 120 23) ;">
+        <p class="col-md-5">Managed by Surendranagar Law Society | NAAC Accredited B+</p>
+        <p class="col-md-3"> Call: 02752-223291/236955</p>
+        <div>
+            <select class="goog-te-combo rounded-1" aria-label="Language Translate Widget" fdprocessedid="svs489">
+                <option value="">Select Language</option>
+                <option value="af">Afrikaans</option>
+                <option value="sq">Albanian</option>
+                <option value="am">Amharic</option>
+                <option value="ar">Arabic</option>
+                <option value="hy">Armenian</option>
+                <option value="as">Assamese</option>
+                <option value="ay">Aymara</option>
+                <option value="az">Azerbaijani</option>
+                <option value="bm">Bambara</option>
+                <option value="eu">Basque</option>
+                <option value="be">Belarusian</option>
+                <option value="bn">Bengali</option>
+                <option value="bho">Bhojpuri</option>
+                <option value="bs">Bosnian</option>
+                <option value="bg">Bulgarian</option>
+                <option value="ca">Catalan</option>
+                <option value="ceb">Cebuano</option>
+                <option value="ny">Chichewa</option>
+                <option value="zh-CN">Chinese (Simplified)</option>
+                <option value="zh-TW">Chinese (Traditional)</option>
+                <option value="co">Corsican</option>
+                <option value="hr">Croatian</option>
+                <option value="cs">Czech</option>
+                <option value="da">Danish</option>
+                <option value="dv">Dhivehi</option>
+                <option value="doi">Dogri</option>
+                <option value="nl">Dutch</option>
+                <option value="eo">Esperanto</option>
+                <option value="et">Estonian</option>
+                <option value="ee">Ewe</option>
+                <option value="tl">Filipino</option>
+                <option value="fi">Finnish</option>
+                <option value="fr">French</option>
+                <option value="fy">Frisian</option>
+                <option value="gl">Galician</option>
+                <option value="ka">Georgian</option>
+                <option value="de">German</option>
+                <option value="el">Greek</option>
+                <option value="gn">Guarani</option>
+                <option value="gu">Gujarati</option>
+                <option value="ht">Haitian Creole</option>
+                <option value="ha">Hausa</option>
+                <option value="haw">Hawaiian</option>
+                <option value="iw">Hebrew</option>
+                <option value="hi">Hindi</option>
+                <option value="hmn">Hmong</option>
+                <option value="hu">Hungarian</option>
+                <option value="is">Icelandic</option>
+                <option value="ig">Igbo</option>
+                <option value="ilo">Ilocano</option>
+                <option value="id">Indonesian</option>
+                <option value="ga">Irish Gaelic</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="jw">Javanese</option>
+                <option value="kn">Kannada</option>
+                <option value="kk">Kazakh</option>
+                <option value="km">Khmer</option>
+                <option value="rw">Kinyarwanda</option>
+                <option value="gom">Konkani</option>
+                <option value="ko">Korean</option>
+                <option value="kri">Krio</option>
+                <option value="ku">Kurdish (Kurmanji)</option>
+                <option value="ckb">Kurdish (Sorani)</option>
+                <option value="ky">Kyrgyz</option>
+                <option value="lo">Lao</option>
+                <option value="la">Latin</option>
+                <option value="lv">Latvian</option>
+                <option value="ln">Lingala</option>
+                <option value="lt">Lithuanian</option>
+                <option value="lg">Luganda</option>
+                <option value="lb">Luxembourgish</option>
+                <option value="mk">Macedonian</option>
+                <option value="mai">Maithili</option>
+                <option value="mg">Malagasy</option>
+                <option value="ms">Malay</option>
+                <option value="ml">Malayalam</option>
+                <option value="mt">Maltese</option>
+                <option value="mi">Maori</option>
+                <option value="mr">Marathi</option>
+                <option value="mni-Mtei">Meiteilon (Manipuri)</option>
+                <option value="lus">Mizo</option>
+                <option value="mn">Mongolian</option>
+                <option value="my">Myanmar (Burmese)</option>
+                <option value="ne">Nepali</option>
+                <option value="no">Norwegian</option>
+                <option value="or">Odia (Oriya)</option>
+                <option value="om">Oromo</option>
+                <option value="ps">Pashto</option>
+                <option value="fa">Persian</option>
+                <option value="pl">Polish</option>
+                <option value="pt">Portuguese</option>
+                <option value="pa">Punjabi</option>
+                <option value="qu">Quechua</option>
+                <option value="ro">Romanian</option>
+                <option value="ru">Russian</option>
+                <option value="sm">Samoan</option>
+                <option value="sa">Sanskrit</option>
+                <option value="gd">Scots Gaelic</option>
+                <option value="nso">Sepedi</option>
+                <option value="sr">Serbian</option>
+                <option value="st">Sesotho</option>
+                <option value="sn">Shona</option>
+                <option value="sd">Sindhi</option>
+                <option value="si">Sinhala</option>
+                <option value="sk">Slovak</option>
+                <option value="sl">Slovenian</option>
+                <option value="so">Somali</option>
+                <option value="es">Spanish</option>
+                <option value="su">Sundanese</option>
+                <option value="sw">Swahili</option>
+                <option value="sv">Swedish</option>
+                <option value="tg">Tajik</option>
+                <option value="ta">Tamil</option>
+                <option value="tt">Tatar</option>
+                <option value="te">Telugu</option>
+                <option value="th">Thai</option>
+                <option value="ti">Tigrinya</option>
+                <option value="ts">Tsonga</option>
+                <option value="tr">Turkish</option>
+                <option value="tk">Turkmen</option>
+                <option value="ak">Twi</option>
+                <option value="uk">Ukrainian</option>
+                <option value="ur">Urdu</option>
+                <option value="ug">Uyghur</option>
+                <option value="uz">Uzbek</option>
+                <option value="vi">Vietnamese</option>
+                <option value="cy">Welsh</option>
+                <option value="xh">Xhosa</option>
+                <option value="yi">Yiddish</option>
+                <option value="yo">Yoruba</option>
+                <option value="zu">Zulu</option>
+            </select>
+            <div class="d-flex">
+                <p class="text-secondary">Powered by</p>
+                <a class="VIpgJd-ZVi9od-l4eHX-hSRGPd text-body-tertiary text-decoration-none"
+                    href="https://translate.google.com" target="_blank"><img
+                        src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png"
+                        width="37px" height="14px" style="padding-right: 3px" alt="Google Translate">Translate</a>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center border-bottom fs-3 container gap-3 SMT">
+        <img src="image/logo.jpg" width="120px">
+        <div class="d-flex fw-bold text-center pt-5 gap-3" style="color: rgb(165 42 42);">
+            <p>SMT. SADGUNA C.U.SHAH HOME SCIENCE & C.U.SHAH ARTS AND COMMERCE MAHILA COLLEGE,WADHWAN CITY,SURENDRANAGAR
+            </p>
+        </div>
+    </div>
+
+
+    <nav class="BAR navbar navbar-expand-lg container col-md-8 pb-5">
+        <div class="container-fluid ">
+            <a href=""></a>
+            <button class="button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse fw-bold" id="navbarScroll">
+                <ul class="navbar-nav gap-3" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ABOUT
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="About-collage.html">ABOUT COLLAGE</a></li>
+                            <li><a class="dropdown-item" href="About-management.html">ABOUT MANAGEMENT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cource.html">COURCE</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ADMISSION
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Admission-form.html">ADMISSION FORM</a></li>
+                            <li><a class="dropdown-item" href="image/broucher.pdf">BROUCHER</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faculty.html">FACULTY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            STUDENT CORNER
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="syllabus.html">SYLLABUS</a></li>
+                            <li><a class="dropdown-item" href="MATERIAL.html">MATERIAL</a></li>
+                            <li><a class="dropdown-item" href="News-Notice.html">NEWS & NOTICE</a></li>
+                            <li><a class="dropdown-item" href="ALUMNI.HTML">ALUMNI</a></li>
+                            <li><a class="dropdown-item" href="CERTIFICATE-REQUEST.html">CERTIFICATE REQUEST</a></li>
+                            <li><a class="dropdown-item" href="#">MERIT LIST</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="About-us d-flex pt-2 pb-2 text-light fs-5" style="background-color:  rgb(230 120 23) ;">
+        <div class="container col-md-4">About Admission</div>
+        <div class="container col-md-2"><a href="">Home</a> / Admission</div>
+    </div>
+    <div class="course fs-3 text-center pt-4 pb-1 ">
+        <p>Admission Form</p>
+    </div>
+    <div class="fs-5 text-center pt-4 pb-1" style="color: rgb(230 120 23);">
+        <b>On Line Admission Closed for Semester-1</b>
+    </div>
+    <div class="accordion container col-md-9 pb-3" id="accordionExample">
+        <div class="MERIT">
+            <a href="">મેરીટ લિસ્ટ જોવા માટે અહિ ક્લિક કરો</a>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <strong>વિદ્યાર્થીની સામાન્ય વિગત</strong>
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="">
+                    <table class="table table-striped mb-0">
+                        <tbody>
+                            <tr>
+                                <td> 1 </td>
+                                <td>વિદ્યાશાખા અને સેમેસ્ટર <sup>*</sup> </td>
+                                <td>
+                                    <select name="course" class=" mycontrol" fdprocessedid="tfp3sa">
+                                        <option value="BA- Gujarati">BA- Gujarati</option>
+                                        <option value="BA- Hindi">BA- Hindi</option>
+                                        <option value="B.Com - Accounting">B.Com - Accounting</option>
+                                        <option value="B.Com - Computer Science">B.Com - Computer Science</option>
+                                        <option value="B.Sc  - Home Science">B.Sc - Home Science</option>
+                                        <option value="M.Sc  - Home Science">M.Sc - Home Science</option>
+                                    </select>
+
+                                    <select name="sem" class=" mycontrol" fdprocessedid="s1si8b">
+                                        <option value="Sem-1">Sem-1</option>
+                                        <option value="Sem-2">Sem-2</option>
+                                        <option value="Sem-3">Sem-3</option>
+                                        <option value="Sem-4">Sem-4</option>
+                                        <option value="Sem-5">Sem-5</option>
+                                        <option value="Sem-6">Sem-6</option>
+                                    </select>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td> 2 </td>
+                                <td> પુરુ નામ (અટક પહેલી લખવી) <sup>*</sup> </td>
+                                <td>
+                                    <input type="text" pattern="[a-zA-z ]*$" name="name" class="bigmycontrol"
+                                        required="" placeholder="Enter Full Name" fdprocessedid="my6a3k">
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td> 3 </td>
+                                <td> જન્મતારીખ ( શાળા કે કોલેજમાં નોંધાયેલી) <sup>*</sup></td>
+                                <td>
+                                    <input type="date" name="bdate" required="" class=" mycontrol">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td> 4 </td>
+                                <td> જન્મસ્થળ ની વિગત <sup>*</sup> </td>
+                                <td>
+                                    <input type="text" name="birthplace" pattern="[a-zA-z ]*$" required=""
+                                        class="bigmycontrol" placeholder="Birth Place" fdprocessedid="5h3kwr">
+                                    <input type="text" name="birthtaluko" pattern="[a-zA-z ]*$" required=""
+                                        class="mycontrol" placeholder="Birth Taluko" fdprocessedid="4tsj5">
+                                    <input type="text" name="birthdistrict" pattern="[a-zA-z ]*$" required=""
+                                        class="mycontrol" placeholder="Birth District" fdprocessedid="8e5cy">
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td> 5 </td>
+                                <td> જ્ઞાતિ વર્ગ (કેટેગરી) <sup>*</sup></td>
+                                <td>
+                                    <select name="category" fdprocessedid="1xwxv">
+                                        <option value="GENERAL"> GENERAL </option>
+                                        <option value="SEBC"> SEBC </option>
+                                        <option value="SC"> SC </option>
+                                        <option value="ST"> ST </option>
+                                        <option value="EWS"> EWS </option>
+                                        <option value="EWS"> PH. </option>
+                                    </select>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td> 6 </td>
+                                <td> આંતરિક વર્ગ (કેટેગરી) <sup>*</sup></td>
+                                <td>
+                                    <select name="subcategory" fdprocessedid="ztpxfu">
+                                        <option value="N/A"> N./A. </option>
+                                        <option value="Ph Blind"> Ph. Blind </option>
+                                        <option value="Ph. Orthopaedic"> Ph. Orthopaedic </option>
+                                        <option value="Widow"> Widow </option>
+                                        <option value="Ex. Servicemen"> Ex. Servicemen </option>
+
+                                    </select>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+                                <td> 7 </td>
+                                <td> ધર્મ <sup>*</sup></td>
+                                <td>
+                                    <input type="text" name="religion" pattern="[a-zA-z ]*$" class="bigmycontrol"
+                                        required="" placeholder="Enter Religion " fdprocessedid="v101gc">
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td> 8 </td>
+                                <td>જ્ઞાતિ ની વિગત <sup>*</sup></td>
+                                <td>
+                                    <input type="text" name="cast" pattern="[a-zA-z ]*$" required="" class=" mycontrol"
+                                        placeholder="Enter Cast " fdprocessedid="onvzy">
+                                    <input type="text" name="subcast" pattern="[a-zA-z ]*$" required=""
+                                        class="bigmycontrol" placeholder="Enter Sub Cast " fdprocessedid="vf1xhm">
+                                    <input type="text" name="castcode" class="mycontrol" placeholder="Enter Code  "
+                                        fdprocessedid="ci9ch3">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td> 9 </td>
+                                <td> લગ્ન ની વિગત <sup>*</sup></td>
+                                <td>
+                                    <input type="radio" name="maritalstatus" checked="" value="Unmarried"> UnMarried
+                                    <input type="radio" name="maritalstatus" value="Married"> Married
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+                                <td> 10 </td>
+                                <td> પિતા / વાલી ની વિગત <sup>*</sup></td>
+                                <td>
+                                    <input type="text" name="parentsname" pattern="[a-zA-z ]*$" required=""
+                                        class="bigmycontrol" placeholder="Enter Parents name "
+                                        fdprocessedid="qb8bm"><br><br>
+                                    <textarea name="parentsaddress" required="" class="mytextarea"
+                                        placeholder="Enter Address "></textarea>
+                                </td>
+
+
+                            </tr>
+
+                            <tr>
+                                <td> 11 </td>
+                                <td> વાલી સાથે નુ સગપણ <sup>*</sup></td>
+                                <td>
+                                    <input type="text" name="parentsrelation" pattern="[a-zA-z ]*$" required=""
+                                        class="bigmycontrol" placeholder="Relationship with Guardian"
+                                        fdprocessedid="9orjs">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td> 12 </td>
+                                <td> વાલી નો વ્યવસાય અને વાર્ષિક આવક <sup>*</sup></td>
+                                <td>
+                                    <input type="text" name="occupation" pattern="[a-zA-z ]*$" required=""
+                                        class=" mycontrol" placeholder="Occupation" fdprocessedid="xqm96p">
+                                    <input type="text" name="annualincome" pattern="[0-9]*$" required=""
+                                        class=" mycontrol" placeholder="Annual Income" fdprocessedid="f8bn9h">
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+                                <td> 13 </td>
+                                <td> વિદ્યાર્થીનું કાયમી નુ સરનામુ <sup>*</sup> </td>
+                                <td>
+                                    <textarea name="studperaddress" required="" class="mytextarea"></textarea>
+                                </td>
+
+
+                            </tr>
+
+                            <tr>
+                                <td> 14 </td>
+                                <td> વિદ્યાર્થીનું સુરેન્દ્રનગર નુ સરનામુ </td>
+                                <td>
+                                    <textarea name="studlocaladdress" class="mytextarea"></textarea>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+                                <td> 15 </td>
+                                <td> મોબાઇલ નંબર <sup>*</sup></td>
+                                <td>
+                                    <input type="text" name="pmobile" pattern="[0-9]{10}" required="" class=" mycontrol"
+                                        placeholder="Parent's Mobile no." fdprocessedid="218fmh">
+                                    <input type="text" name="smobile" pattern="[0-9]{10}" required="" class=" mycontrol"
+                                        placeholder="Student Mobile No." fdprocessedid="zrw3v">
+                                </td>
+
+                            </tr>
+
+
+
+                            <tr>
+                                <td> 16 </td>
+                                <td> આધાર કાર્ડ નંબર <sup>*</sup></td>
+                                <td>
+                                    <input type="text" pattern="[0-9]{12}" name="aadharcardno" required=""
+                                        class="bigmycontrol" placeholder="Aadhar Card no" fdprocessedid="x5l3ky">
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td> 17 </td>
+                                <td> વિષય પસંદગી </td>
+                                <td>
+                                    <input type="text" name="mainsub" pattern="[a-zA-Z ]*$" class=" mycontrol"
+                                        placeholder="1. Main Subject" fdprocessedid="lcmyyi">
+                                    <input type="text" name="coresub" pattern="[a-zA-Z ]*$" class=" mycontrol"
+                                        placeholder="2. Core Subject" fdprocessedid="1nfcwp">
+                                    <input type="text" name="elesub1" pattern="[a-zA-Z ]*$" class=" mycontrol"
+                                        placeholder="3. Elective Subject-1" fdprocessedid="zbt3ko">
+                                    <input type="text" name="elesub2" pattern="[a-zA-Z ]*$" class=" mycontrol"
+                                        placeholder="4. Elective Subject-2" fdprocessedid="nagg5i">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td> 18 </td>
+                                <td> કુટુંબની કુલ વાર્ષિક આવક <sup>*</sup></td>
+                                <td>
+                                    <input type="text" name="totalincome" pattern="[0-9]*$" required=""
+                                        class=" mycontrol" placeholder="Annual Income Family" fdprocessedid="bqaqyb">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td> 19 </td>
+                                <td> નોકરી ની વિગત </td>
+                                <td>
+                                    <input type="text" name="jobname" pattern="[a-zA-Z ]*$" class=" mycontrol"
+                                        placeholder="Job" fdprocessedid="x7fdmu">
+                                    <input type="text" name="jobdesg" pattern="[a-zA-Z ]*$" class=" mycontrol"
+                                        placeholder="Designation" fdprocessedid="2sw8i">
+                                    <input type="text" name="jobsalary" pattern="[0-9]*$" class=" mycontrol"
+                                        placeholder="Salary" fdprocessedid="1kcrna"> <br><br>
+                                    <input type="text" name="fromtime" class=" mycontrol" placeholder="FromTime"
+                                        fdprocessedid="a1cllm">
+                                    <input type="text" name="totime" class=" mycontrol" placeholder="ToTime"
+                                        fdprocessedid="07jye">
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td> 20 </td>
+                                <td> રહેઠાણ ની વિગત <sup>*</sup> </td>
+                                <td>
+                                    <input type="radio" checked="" name="staystatus" value="With Family/Guardian"> With
+                                    Family/Guardian &nbsp;&nbsp;
+                                    <input type="radio" name="staystatus" value="PayingGuest/Hostel"> PayingGuest/Hostel
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>શૈક્ષણિક વિગત</strong>
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="">
+                    <table class="table table-striped mb-0 table-1">
+                        <thead>
+                            <tr>
+                                <td>ક્ર્મ નંબર <sup>*</sup></td>
+                                <td>પરીક્ષા નુ નામ <sup>*</sup></td>
+                                <td>પાસ કર્યા નો મહિનો વર્ષ <sup>*</sup> </td>
+                                <td>કુલ ગુણ <sup>*</sup> </td>
+                                <td>મેળવેલા ગુણ <sup>*</sup></td>
+                                <td>ટકા <sup>*</sup></td>
+                                <td>શાળા / કોલેજ નુ નામ <sup>*</sup> </td>
+                                <td>બેઠક નંબર <sup>*</sup></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 1 </td>
+                                <td>
+                                    <select name="education" required="">
+                                        <option value="H.S.C"> H.S.C.</option>
+                                        <option value="Sem-1"> Sem-1 </option>
+                                        <option value="Sem-2"> Sem-2 </option>
+                                        <option value="Sem-3"> Sem-3 </option>
+                                        <option value="Sem-4"> Sem-4 </option>
+                                        <option value="Sem-5"> Sem-5 </option>
+                                        <option value="Sem-6"> Sem-6 </option>
+                                    </select>
+                                </td>
+                                <td> <input name="passyear1" required="" type="text" size="5" class="educontrol"> </td>
+                                <td> <input name="totalmarks1" pattern="[0-9]*$" required="" type="text" size="5"
+                                        class="educontrol"> </td>
+                                <td> <input name="obtainmark1" pattern="[0-9]*$" required="" type="text" size="5"
+                                        class="educontrol"> </td>
+                                <td> <input name="per1" pattern="[0-9.]*$" required="" type="text" size="5"
+                                        class="educontrol"> </td>
+                                <td> <input name="scname1" required="" type="text" size="30" class="educontrol"> </td>
+                                <td> <input name="seatno1" required="" type="text" size="10" class="educontrol"> </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+
+                    <table class="table table-striped mb-0 table-2">
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                પરીક્ષા નુ નામ  <sup>*</sup>
+                            </td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="H.S.C">H.S.C</option>
+                                    <option value="Sem-1">Sem-1</option>
+                                    <option value="Sem-2">Sem-2</option>
+                                    <option value="Sem-3">Sem-3</option>
+                                    <option value="Sem-4">Sem-4</option>
+                                    <option value="Sem-5">Sem-5</option>
+                                    <option value="Sem-6">Sem-6</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                પાસ કર્યા નો મહિનો વર્ષ
+                                <sup>*</sup>
+                            </td>
+                            <td>
+                                <input name="passyear" type="text" size="10">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                કુલ ગુણ
+                                <sup>*</sup>
+                            </td>
+                            <td>
+                                <input type="text" name="totalmarks" size="10">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                મેળવેલા ગુણ
+                                <sup>*</sup>
+                            </td>
+                            <td>
+                                <input type="text" name="obtainmarks" size="10">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                ટકા 
+                                <sup>*</sup>
+                            </td>
+                            <td>
+                                <input type="text" name="pre" size="10">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>
+                                શાળા / કોલેજ નુ નામ
+                                <sup>*</sup>
+                            </td>
+                            <td>
+                                <input type="text" name="scname" size="30">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td>
+                                બેઠક નંબર
+                                <sup>*</sup>
+                            </td>
+                            <td>
+                                <input type="text" name="seatno" size="10">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong>સ્કોલરશિપ માટે ની વિગત</strong>
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div>
+                    <table class="table table-striped mb-0">
+                        <tbody>
+                            <tr>
+                                <td> 1 </td>
+                                <td>રેશન કાર્ડ નંબર </td>
+                                <td> <input type="text" name="rationcardnumber" class="bigmycontrol"> </td>
+                            </tr>
+
+                            <tr>
+                                <td> 2 </td>
+                                <td> બેંક ની વિગત</td>
+                                <td>
+                                    <input type="text" name="accno" pattern="[0-9]*$" placeholder="Account No "
+                                        class="mycontrol">
+                                    <input type="text" name="accname" pattern="[a-zA-z ]*$" placeholder="Account Name"
+                                        class="mycontrol">
+                                    <input type="text" name="ifsccode" placeholder="IFSC Code " class="mycontrol">
+                                    <input type="text" name="branchname" pattern="[a-zA-z ]*$"
+                                        placeholder="Branch Name " class="mycontrol">
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                    <strong>જોડાણ ( ડોકયુમેંટ ની સાઇઝ 100કેબી થી ઓછી અને jpg ફૉર્મટ માં રાખવી)</strong>
+                </button>
+            </h2>
+            <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div>
+                    <table class="table table-striped mb-0">
+
+                        <tbody>
+                            <tr>
+                                <td> 1 </td>
+                                <td>પાસપોર્ટ સાઇજ ફોટોગ્રાફ <sup>*</sup></td>
+                                <td> <input type="file" required="" onchange="return fileValidation7()" id="file7"
+                                        name="studphoto"> </td>
+                                <td>
+                                    <div style="width:75px;height:75px" id="image7"> </div>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td> 2 </td>
+                                <td>વિદ્યાર્થીની ની સહિ <sup>*</sup></td>
+                                <td> <input type="file" required="" onchange="return fileValidation8()" id="file8"
+                                        name="studsignature"> </td>
+                                <td>
+                                    <div style="width:75px;height:75px" id="image8"> </div>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td> 3 </td>
+                                <td>ધોરણ-12 માર્કશીટ <sup>*</sup></td>
+                                <td> <input type="file" required="" onchange="return fileValidation9()" id="file9"
+                                        name="studmarksheet"> </td>
+                                <td>
+                                    <div style="width:75px;height:75px" id="image9"> </div>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td> 4 </td>
+                                <td> જાતિ નો દાખલો <sup>*</sup></td>
+                                <td> <input type="file" required="" onchange="return fileValidation10()" id="file10"
+                                        name="studcast"> </td>
+                                <td>
+                                    <div style="width:75px;height:75px" id="image10"> </div>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                    <div class="pt-5 ps-2">
+                        <strong style="font-size: 13pt;">જરુરી સુચના</strong><br><br>
+                        <p>કોલેજના દરેક નિયમો મને બંધનકર્તા છે.  હુ નિયમિત રીતે કોલેજમાં  હાજરી આપવા તેમજ સંસ્થા અને સૌરાષ્ટ્ર યુનિવર્સિટીના નિયમો પ્રમાણે શિસ્તબધ વર્તન કરવા ખાત્રી આપું છુ. કોલેજની  આંતરિક પરીક્ષા આપવી ફરજીયાત છે.	 કોલેજ બિલ્ડિંગ, ક્લાસ રુમમાં  મોબાઇલ 
+                        લાવવા પર પ્રતિબંધ છે. મોબાઇલ ખોવાઇ જાય તો તે અંગેની જવાબદારી વિદ્યાર્થીની પોતાની રહેશે. 
+                        </p>
+                        <p>
+                        સરકારશ્રી  તરફથી મળતી તમામ પ્રકાર ની શિ.વ્રુતિનો લાભ જે તે સમય મર્યાદાને આધીન મળવાપાત્ર રહેશે. લાભ મેળવવા ઇચ્છતા વિદ્યાર્થીઓએ પ્રવેશપત્ર સાથે જ નિયત પત્રકમાં  અરજી રજુ કરી દેવાની રહેશે. અન્યથા અરજી ધ્યાને લેવામાં આવશે નહીં. તેની દરેકે સ્પષ્ટ નોંધ લેવી. તેમજ શિ. વ્રુતિ મેળવવા ઇચ્છતી વિધ્યાર્થિનિઓએ પોતાની બેંક પાસબુકની નકલ અવશ્ય જોડવાની રહેશે.
+                        </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="SAVE pt-5">
+            <button>SAVE</button>
+        </div>
+    </div>
+    <div class="SMT-address d-flex-column  possion-relative pt-3 mt-3" style="background-color: rgb(165 42 42);">
+        <div
+            class="SMT-SADGUNA d-flex gap-4 fs-6 fw-bold possion-absolute bg-light justify-content-center align-items-center pt-2 pb-2 container col-md-12 rounded-1 text-center">
+            <i class="fa-solid fa-circle"></i>
+            SMT. SADGUNA C.U.SHAH HOME SCIENCE & C.U.SHAH ARTS AND COMMERCE MAHILA COLLEGE
+            <i class="fa-solid fa-circle"></i>
+        </div>
+        <div class="d-flex container align-items-start">
+            <div class="text-light container col-md-6 fs-5 lh-lg pt-3 pb-3">
+                <h4><b>ADDRESS</b></h4>
+                <p>B/H. Mahatma Gandhi Hospital,<br>
+                    Nr. Kadva Patidar Boarding,<br>
+                    60 feet Road,<br>
+                    Wadhwan City 363030 <br>
+                    Dist. Surendranagar(Gujarat).</p>
+                <h6 lang="pt-3"><b>Phone: </b>(+91) 02752-223291
+                    <b>Email:</b>hsccollege@gmail.com/dnmehta.hsc@gmail.com
+                </h6>
+            </div>
+            <div class="LINKS text-light col-md-5 lh-lg pt-3">
+                <ul type="none">
+                    <h4><b>LINKS</b></h4>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Admission</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">Faculty</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="powered-by d-flex pt-2 pb-2 text-light" style="background-color: rgb(230 120 23);">
+        <div class="col-md-2 container">Powered By : Shiv Computer</div>
+        <div class="col-md-3 container"><i class="fa-solid fa-envelope"></i> scushacmc.admission@gmail.com</div>
+    </div>
+</body>

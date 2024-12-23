@@ -1,0 +1,603 @@
+body {
+    margin: 0%;
+}
+
+.info {
+    background-color: rgb(64, 80, 110);
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    padding: 10px 200px 10px 100px;
+    color: white;
+}
+
+.info div {
+    display: flex;
+    gap: 10px;
+}
+
+.Quality {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px 0px 100px;
+    margin: 10px;
+}
+
+.Quality div img {
+    width: 255px;
+}
+
+
+.Quality .ul ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 10px 200px;
+    gap: 40px;
+    justify-content: end;
+    font-size: 18px;
+}
+
+.ul ul li a {
+    display: flex;
+    font-weight:900;
+    font-size: large;
+    text-decoration: none;
+    color: rgb(63, 84, 111)
+    
+}
+
+.ul ul li a:hover {
+    color: rgb(252 185 0);
+    text-decoration: underline;
+}
+
+.get {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.get button {
+    width: 130px;
+    height: 40px;
+    background-color: rgb(63, 84, 111);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.get button:hover {
+    background-color: rgb(252 185 0);
+}
+
+
+
+.welcome {
+    background-image: url(image/galleryimg15-640x480.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 320px 330px 30px;
+    height: 700px;
+    font-size: xx-large;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.welcome div {
+    width: 800px;
+    padding-top: 175px;
+}
+
+.welcome h3 {
+    font-size: smaller;
+}
+
+.welcome button {
+    height: 80px;
+    width: 250px;
+    background-color: rgb(64, 80, 110);
+    color: white;
+    font-weight: bolder;
+    border: none;
+}
+
+.welcome button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.why {
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(64, 80, 110);
+    color: white;
+}
+
+.why div img {
+    width: 125px;
+}
+
+.why .choose {
+    display: flex;
+    justify-content: center;
+}
+
+.why .why-sub-div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+
+
+
+
+.companyservice {
+    justify-content: center;
+    display: flex;
+    padding-top: 100px;
+    background-color: rgb(246 246 246);
+}
+
+
+.Company {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.Company div {
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.Company div h1 {
+    line-height: 50px;
+}
+
+
+.Companyimage {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 10px 70px 30px;
+}
+
+
+
+
+.overview {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 200px 0px 200px;
+}
+
+.overview div {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.overview p {
+    font-size: larger;
+    line-height: 30px;
+}
+
+
+
+.Qualitymain {
+    text-align: center;
+    display: flex;
+    padding: 50px 200px 10px 200px;
+    gap: 100px;
+    font-size: larger;
+}
+
+.nextprev{
+    width: 50px;
+}
+
+.Qualitymain .department {
+    line-height: 30px;
+}
+
+.department h1 {
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+
+
+
+.QualityPolicy {
+    padding: 0px 200px 50px 200px;
+    border-color: black solid;
+    align-items: center;
+    font-size: larger;
+}
+
+.QualityPolicy h1 {
+    font-size: 60px;
+    padding-bottom: 0px;
+    font-weight: bolder;
+    line-height: 100px;
+}
+
+.QualityPolicy p {
+    line-height: 30px;
+}
+
+
+
+
+.ourproduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(image/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    font-size: 20px; 
+    color: white;
+}
+
+.our {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;   
+  width: 915px;
+  line-height: 33px;
+}
+
+
+.ourimg  {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.ourimg div div {
+    position: absolute;
+    top: 210px;
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 140px;
+}
+
+
+.ourimg div i {
+    position: absolute;
+    top: 110px;
+    left: 50px;
+    background-color: white;
+    color: rgb(64, 80, 110);
+    border: 2px solid  rgb(64, 80, 110);
+    border-radius: 70px;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.ourimg img {
+    width: 350px;
+}
+
+.ourimg div div h3 {
+    padding: 40px;
+    font-size: 25px;
+}
+
+.free-button {
+    position: relative;
+    top: 200px;
+}
+
+.free-button button {
+    height: 50px;
+    width: 190px;
+    font-size: 15px;
+    background-color: rgb(64, 80, 110);
+    color: white;
+    border: none;
+    border-radius: 5    px;
+}
+
+.free-button:hover button{
+    background-color: rgb(252 185 0);
+}
+
+
+
+
+
+.Download {
+    background-image: url(image/Rectangle-7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+}
+
+
+.Download div button {
+    height: 40px;
+    width: 150px;
+    background-color: rgb(247, 195, 49);
+    border: none;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+.industries .serve {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;   
+    padding: 20px 370px 20px 370px;
+    font-size: 18px;
+    line-height: 33px;
+}
+
+.industries .image1 {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    padding-bottom: 30px;
+}
+
+.industries .image2 {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    padding-bottom: 20px;
+}
+
+.industries .image3 {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    
+}
+
+
+
+
+
+
+
+.customer .reviews {
+    text-align: center;
+    padding: 30px 300px 30px 300px;
+    font-size: large;
+    line-height: 30px;
+}
+
+.table {
+    display: flex;
+    gap: 30px;
+    font-size: 22px;
+    justify-content: center;
+}
+
+.table div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    width: 450px;
+    height: 300px;
+    padding: 0px 0px 20px 20px;
+}
+
+.table div p {
+    font-size: 20px ;
+    line-height: 30px;
+}
+
+.table div img {
+    width: 100px;
+    padding-left: 10px;
+}
+
+
+
+.Looking {
+    display: flex;
+    background-color: rgb(64, 80, 110);
+    justify-content: space-between;
+    padding: 20px 0px 20px 200px;
+    margin-top: 40px;
+    color: white;
+    align-items: center;
+}
+
+
+.Looking div {
+    width: 470px;
+    line-height: 40px;
+}
+
+.Looking button {
+    height: 50px;
+    width: 200px;
+    background-color: rgb(247, 195, 49);
+    font-weight: bolder;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+
+.Why {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 50px;
+    padding-left: 100px;
+}
+
+
+
+.FAQs .p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: large;
+    padding: 0px 400px 0px 400px;
+    line-height: 35px;
+}
+
+.FAQ {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.FAQs .FAQ div {
+
+    border: 1px solid black;
+}
+
+
+
+
+
+.getfree {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.getfree h2 {
+    text-align: center;
+    font-size:xx-large;
+}
+
+.getfree .type {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.type input {
+    background-color:rgb(246 246 246);
+    width: 270px;
+    height: 25px;
+    padding: 10px;
+}
+
+.textarea {
+    padding-left: 290px;
+    gap: 100px;
+}
+
+.textarea textarea {
+    background-color:rgb(246 246 246);
+}
+
+.getfree .submit {
+    display: flex;
+    padding-left: 290px;
+}
+
+.submit button {
+    width: 110px;
+    height: 45px;
+    background-color: rgb(64, 80, 110); 
+    color: white;
+    font-weight: bolder ;
+    margin-bottom: 70px;
+    border: none;
+}
+
+
+.submit button:hover {
+    background-color: rgb(247, 195, 49);
+}
+
+
+
+.address {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(202, 207, 214);
+    padding: 30px;
+    color:  rgb(64, 80, 110);
+    font-size: 20px;
+}
+
+.add {
+    width: 200px;
+    line-height: 30px;
+}
+
+.Quicklink div ul {
+    line-height: 30px;
+    padding:0px;
+}
+
+.certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.certibutton button { 
+    background-color: rgb(64, 80, 110);
+    width: 200px;
+    height: 50px;
+    color: white;
+    border: none;
+    font-size: 17px;
+}
+
+
+
+
+
+.Copyright {
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+    background-color: rgb(64, 80, 110); 
+    color: white;
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+

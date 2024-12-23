@@ -1,0 +1,364 @@
+body {
+    margin: 0%;
+}
+
+.info {
+    background-color: rgb(64, 80, 110);
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    padding: 10px 200px 10px 100px;
+    color: white;
+}
+
+.info div {
+    display: flex;
+    gap: 10px;
+}
+
+.Quality {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px 0px 100px;
+    margin: 10px;
+}
+
+.Quality div img {
+    width: 255px;
+}
+
+
+.Quality .li ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 10px 200px;
+    gap: 40px;
+    justify-content: end;
+    font-size: 18px;
+}
+
+.li ul li a {
+    display: flex;
+    font-weight:900;
+    font-size: large;
+    text-decoration: none;
+    color: rgb(63, 84, 111)
+    
+}
+
+.li ul li a:hover {
+    color: rgb(252 185 0);
+    text-decoration: underline;
+}
+
+.get {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.get button {
+    width: 130px;
+    height: 40px;
+    background-color: rgb(63, 84, 111);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.get button:hover {
+    background-color: rgb(252 185 0);
+}
+
+
+.contact-us {
+    background-image: url(image/client-backgroun.jpg);
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding-top: 100px;
+    font-size: x-large;
+    color: white;
+}
+
+
+
+
+
+.Department1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 100px;
+    color: white;
+}
+
+
+.marketing-deparment {
+    background-color: rgb(252 185 0);
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px 20px 20px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.marketing-deparment i {
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: rgb(252 185 0);
+    border-radius: 40px;
+    width: 65px;
+    height: 65px;
+}
+
+.marketing-deparment:hover > i{
+    background-color: rgb(63, 84, 111);
+}
+
+.sales-department {
+    background-color: rgb(63, 84, 111);
+    display: flex;   
+    flex-direction: column;
+    padding: 100px 20px 20px 20px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sales-department i {
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: rgb(63, 84, 111);
+    border-radius: 40px;
+    width: 65px;
+    height: 65px;
+}
+
+.sales-department:hover >i {
+    background-color:  rgb(252 185 0);
+}
+
+
+.production-department {
+    background-color:  rgb(252 185 0);
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px 20px 20px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.production-department i {
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: rgb(252 185 0);
+    border-radius: 40px;
+    width: 65px;
+    height: 65px;
+}
+
+.production-department:hover >i {
+    background-color: rgb(63, 84, 111);
+}
+
+
+.Department2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px;
+    color: white;
+}
+
+.Quality-departent {
+    background-color:  rgb(63, 84, 111);
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px 20px 20px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Quality-departent i {
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: rgb(63, 84, 111);
+    border-radius: 40px;
+    width: 65px;
+    height: 65px;
+}
+
+.Quality-departent:hover >i {
+    background-color:  rgb(252 185 0);
+}
+
+
+.General-inquires {
+    background-color:  rgb(252 185 0);
+    display: flex;
+    flex-direction: column;
+    padding: 80px 45px 20px 45px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.General-inquires i {
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color:rgb(252 185 0);
+    border-radius: 40px;
+    width: 65px;
+    height: 65px;
+}
+
+.General-inquires:hover >i{
+    background-color: rgb(63, 84, 111);
+}
+
+
+.Address {
+    background-color:  rgb(63, 84, 111);
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px 20px 20px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Address i {
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: rgb(63, 84, 111);
+    border-radius: 40px;
+    width: 65px;
+    height: 65px;
+}
+
+.Address:hover >i {
+    background-color:  rgb(252 185 0);
+}
+
+
+
+
+
+
+.form {
+    display: flex;
+    padding: 30px 0px 100px 200px;
+}
+
+.contact-form {
+    font-size: x-large;
+}
+.name-email {
+    display: flex;
+    gap: 30px;
+}
+
+.name-email input {
+    background-color: rgb(246 246 246);
+    display: flex;
+    width: 230px;
+    height: 40px;
+    padding-left:10px;
+    font-size: 15px;
+}
+
+.number {
+    padding-top: 20px;
+}
+
+.number input {
+    display: flex;
+    background-color: rgb(246 246 246);
+    width: 500px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.your-massage {
+    padding-top: 20px;
+}
+
+.your-massage textarea {
+    display: flex;
+    background-color: rgb(246 246 246);
+    width: 500px;
+    height: 200px;
+    padding: 20px 0px 0px 10px;
+    font-size: 15px;
+}
+
+.submit {
+    padding-top: 30px;
+}
+
+.submit button {
+    background-color: rgb(64, 80, 110);
+    color: white;
+    display: flex;
+    width: 115px;
+    font-weight: bold;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.submit button:hover {
+    background-color: rgb(252 185 0);
+}
+
+.map {
+    padding-left: 20px;
+    padding-top: 100px;
+    
+}
+
+
+.Copyright {
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+    background-color: rgb(64, 80, 110);
+    color: white;
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
